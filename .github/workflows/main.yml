@@ -63,6 +63,7 @@ jobs:
           registry: ${{ secrets.REGISTRY }}
           repo: ${{ secrets.ECR_REPOSITORY }}
           region: ${{ secrets.AWS_REGION }}
+          tags: "latest,1.0.1,1.0"
           daemon_off: false
           dockerfile: ./Dockerfile
           context: ./
